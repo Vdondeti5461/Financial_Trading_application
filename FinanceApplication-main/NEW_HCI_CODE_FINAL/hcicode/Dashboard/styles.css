@@ -1,0 +1,668 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f4f6;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+header nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.logo img {
+    width :100px;
+    height: 100px;
+    margin-right : 100px;
+    border-radius : 80px;
+    border : 1px solid #ccc;
+    padding: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+  
+  }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+.dashboard {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.dashboard section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dashboard h2 {
+    color: #2c3e50;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.balance-amount {
+    font-size: 1.4em;
+    color: #27ae60;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.company-list {
+    margin: 20px;
+    padding: 60px;
+}
+
+.company {
+    border: 50px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 900px;
+}
+
+.company h3 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.company p {
+    color: #555;
+}
+
+/* General Sandbox Section Styling */
+#sandbox {
+    background-color: #f8f8f8; /* Light grey background */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center-align the text */
+}
+
+#sandbox h2 {
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#sandbox p {
+    color: #666; /* Lighter text color for paragraphs */
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Styling for the Features List */
+.sandbox-features p {
+    margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+/* Styling for the Enter Sandbox Button */
+.sandbox-btn {
+    display: inline-block; /* Align button to center */
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; /* Remove underline from link */
+    font-size: 1em;
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sandbox-btn:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+
+/* ... existing CSS ... */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.market-news, .personal-insights {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trade-interface{
+    background: white;
+    margin-bottom: 20px;
+    padding: 50px;
+    border-radius: 100px;
+    box-shadow: 100px 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    font-size: 30px;
+    background-color:white;
+
+}
+
+.trade-interface h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company h3, .market-news h2, .personal-insights h2 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.stock-selector, .trading-actions {
+    margin-bottom: 20px;
+}
+
+.stock-selector label {
+    margin-right: 10px;
+}
+
+#stock-selection {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.trading-actions input[type="number"] {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.current-stock-info h3 {
+    margin-top: 0;
+}
+
+.current-stock-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Style for the stock performance chart */
+.stock-performance {
+    max-width: 600px;
+    margin: auto;
+}
+
+#stockPerformanceChart {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the Investment Portfolio section */
+.portfolio {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the portfolio summary */
+.portfolio-summary {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.portfolio-summary > div {
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-summary h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.portfolio-summary p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Style for portfolio details */
+.portfolio-details h3 {
+    margin-bottom: 10px;
+}
+
+.holdings-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.holdings-list li {
+    background-color: #e7e7e7;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Style for the portfolio performance chart */
+.portfolio-performance {
+    max-width: 600px;
+    margin: auto;
+}
+
+#portfolioPerformanceChart {
+    width: 100%;
+    height: auto;
+}
+
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Style for Personalized Trading Insights section */
+.personal-insights {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+.personal-insights h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for each insight item */
+.insight-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50; /* Accent color, can be changed */
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.insight-item p {
+    margin: 0;
+    color: #555; /* Darker text for better readability */
+}
+
+.insight-item strong {
+    color: #333; /* Strong color for emphasis */
+}
+
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    
+}
+
+.news-item h3 {
+    margin-top: 0;
+}
+
+.news-item p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+.insight-item {
+    background: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+.insight-item p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+.portfolio {
+    background: white;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    align-content: center;
+    font-display: center;
+    font-size: 20px;
+    margin-bottom: 3px;
+    padding-inline-start: 100px;
+}
+
+.portfolio h2, .portfolio h3 {
+    margin-top: 100px;
+}
+
+.portfolio-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+.total-investment, .total-return, .portfolio-diversification {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.total-investment p, .total-return p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+
+.portfolio-diversification p {
+    margin: 5px 0 0;
+}
+
+.holdings-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.holdings-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio-performance {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.company {
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-top: 40px;
+    display: flex;
+    text-align: center;;
+
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.portfolio {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.portfolio h2, .portfolio h3 {
+    margin-top: 0;
+}
+
+.portfolio-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.total-investment, .total-return, .portfolio-diversification {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.total-investment p, .total-return p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+
+.portfolio-diversification p {
+    margin: 5px 0 0;
+}
+
+.holdings-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.holdings-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio-performance {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Trading Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Advanced Trading Simulator</div>
+            <ul class="nav-links">
+                <li><a href="demologin.html">Dashboard</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#market-news">Market News</a></li>
+                
+                <li><a href="#insights">Insights</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="company-list" id="investment-opportunities">
+        <!-- Example for one company, replicate for others -->
+        <h1>Available Trades to Invest </h1>
+        <div class="company">
+            <h3>APP</h3>
+            <p>Technology | Current Price: $300</p>
+            <button class="invest-btn">Invest</button>
+        </div>
+        <div class="company">
+            <h3>MICROSOFT</h3>
+            <p>Technology | Current Price: $300</p>
+            <button class="invest-btn">Invest</button>
+        </div>
+        <div class="company">
+            <h3>META</h3>
+            <p>Technology | Current Price: $300</p>
+            <button class="invest-btn">Invest</button>
+        </div>
+
+        <div class="company">
+            <h3>AIRBNB</h3>
+            <p>Technology | Current Price: $300</p>
+            <button class="invest-btn">Invest</button>
+        </div>
+
+        <div class="company">
+            <h3>LAMBDATEST</h3>
+            <p>Technology | Current Price: $300</p>
+            <button class="invest-btn">Invest</button>
+        </div>
+
+        <div class="company">
+            <h3>UVM</h3>
+            <p>Technology | Current Price: $300</p>
+            <button class="invest-btn">Invest</button>
+        </div>
+        <!-- Add other companies similarly -->
+    </section>
+
+    <!-- Modal for Investment Success -->
+    <div id="investmentSuccessModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Investment Successful</h2>
+            <p>Your investment has been processed successfully.</p>
+        </div>
+    </div>
+    
+    <section class="trade-interface" id="real-time-trading">
+        <h2>Real-Time Trading Interface</h2>
+        
+        <div class="stock-selector">
+            <label for="stock-selection">Select Stock:</label>
+            <select id="stock-selection">
+                <option value="abc">AAP</option>
+                <option value="def">MICROSOFT</option>
+                <option value="ghi">META</option>
+                <option value="ghi">AIRBNB</option>
+                <option value="ghi">LAMBDATEST</option>
+                <option value="ghi">UVM</option>
+                <!-- More options -->
+            </select>
+        </div>
+        <div class="trading-actions">
+            <input type="number" id="stock-quantity" placeholder="Quantity">
+            <button class="buy-button">Buy</button>
+            <button class="sell-button">Sell</button>
+        </div>
+        
+        <div class="current-stock-info">
+            <h3>Stock Information</h3>
+            <p><strong>Current Price:</strong> <span id="current-price">$300</span></p>
+            <p><strong>Market Cap:</strong> <span id="market-cap">$50B</span></p>
+            <p><strong>Day's Range:</strong> <span id="days-range">$295 - $310</span></p>
+            <p><strong>52 Week Range:</strong> <span id="52-week-range">$250 - $350</span></p>
+            <p><strong>Volume:</strong> <span id="volume">1M</span></p>
+            <p><strong>PE Ratio:</strong> <span id="pe-ratio">22</span></p>
+        </div>
+
+        <div class="stock-performance">
+            <canvas id="stockPerformanceChart"></canvas>
+        </div>
+
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+        <h2>Your Investment Portfolio</h2>
+        <div class="portfolio-summary">
+            <div class="total-investment">
+                <h3>Total Investment Value</h3>
+                <p>$10,000</p>
+            </div>
+            <div class="total-return">
+                <h3>Total Return</h3>
+                <p>+15%</p>
+            </div>
+            <div class="portfolio-diversification">
+                <h3>Portfolio Diversification</h3>
+                <p>Stocks 60% | Bonds 20% | ETFs 15% | Cryptos 5%</p>
+            </div>
+        </div>
+        <div class="portfolio-details">
+            <h3>Current Holdings</h3>
+            <ul class="holdings-list">
+                <li>Company ABC: 10 Shares</li>
+                <li>Company DEF: 5 Shares</li>
+                <li>Company GHI: 20 Shares</li>
+                <li>Company JKL: 8 Shares</li>
+                <li>Company MNO: 15 Shares</li>
+                <!-- More holdings can be added here -->
+            </ul>
+            <div class="portfolio-performance">
+                <canvas id="portfolioPerformanceChart"></canvas>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="market-news" id="market-news">
+        <h2>Latest Market News</h2>
+        <article class="news-item">
+            <h3>Global Markets React to Economic Indicators</h3>
+            <p>Today, stock markets around the globe experienced volatility following the release of new economic data from the United States and the European Union. Investors are closely monitoring these developments.</p>
+            <a href="https://www.aistocktip.com/great-pacific-gold-corp/?gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWvOq6Qn7s2SmVKAybH7n9iseuqbRpzKMfV_4Tw0ha7DQvM0hhyGitMaAg_iEALw_wcB" class="read-more" target="_blank">Read more</a>
+        </article>
+        <!-- More news articles -->
+        <article class="news-item">
+            <h3>Global Markets React to Economic Indicators</h3>
+            <p>Today, stock markets around the globe experienced volatility following the release of new economic data from the United States and the European Union. Investors are closely monitoring these developments.</p>
+            <a href="https://www.aistocktip.com/great-pacific-gold-corp/?gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWvOq6Qn7s2SmVKAybH7n9iseuqbRpzKMfV_4Tw0ha7DQvM0hhyGitMaAg_iEALw_wcB" class="read-more" target="_blank">Read more</a>
+        </article>
+    
+        <article class="news-item">
+            <h3>Tech Giants Lead the Rally</h3>
+            <p>Leading technology companies saw a significant increase in their stock prices today, driven by positive earnings reports and strong consumer demand for tech products.</p>
+            <a href="https://www.aistocktip.com/great-pacific-gold-corp/?gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWvOq6Qn7s2SmVKAybH7n9iseuqbRpzKMfV_4Tw0ha7DQvM0hhyGitMaAg_iEALw_wcB" class="read-more" target="_blank" >Read more</a>
+        </article>
+    
+        <article class="news-item">
+            <h3>Energy Sector Faces Uncertainty</h3>
+            <p>The energy sector is facing uncertainty amid fluctuating oil prices and the ongoing shift towards renewable energy sources. This has led to mixed performances in energy stocks.</p>
+            <a href="https://www.aistocktip.com/great-pacific-gold-corp/?gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWvOq6Qn7s2SmVKAybH7n9iseuqbRpzKMfV_4Tw0ha7DQvM0hhyGitMaAg_iEALw_wcB" class="read-more" target="_blank">Read more</a>
+        </article>
+    
+        <article class="news-item">
+            <h3>Healthcare Industry Adapts to New Challenges</h3>
+            <p>The healthcare industry continues to adapt to the post-pandemic landscape, with significant developments in pharmaceuticals and healthcare technology driving investor interest.</p>
+            <a href="https://www.aistocktip.com/great-pacific-gold-corp/?gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWvOq6Qn7s2SmVKAybH7n9iseuqbRpzKMfV_4Tw0ha7DQvM0hhyGitMaAg_iEALw_wcB" class="read-more" target="_blank">Read more</a>
+        </article>
+    
+    </section>
+    
+    <section class="personal-insights" id="insights">
+        <h2>Personalized Trading Insights</h2>
+        <div class="insight-item">
+            <p><strong>Tip:</strong> Your portfolio lacks exposure to international markets, which could offer growth opportunities. Explore global ETFs or stocks.</p>
+        </div>
+        <!-- More insights -->
+        <div class="insight-item">
+            <p><strong>Tip:</strong> You have a strong track record with technology stocks. Consider diversifying your portfolio to mitigate risk.</p>
+        </div>
+    
+        <div class="insight-item">
+            <p><strong>Tip:</strong> Your recent trades align with market trends. Keep an eye on emerging sectors such as renewable energy for new opportunities.</p>
+        </div>
+    
+        <div class="insight-item">
+            <p><strong>Tip:</strong> You tend to sell stocks quickly. Consider a longer-term strategy to benefit from compounding growth in stable industries.</p>
+        </div>
+    
+        <div class="insight-item">
+            <p><strong>Tip:</strong> Your portfolio lacks exposure to international markets, which could offer growth opportunities. Explore global ETFs or stocks.</p>
+        </div>
+    </section>
+
+    <!-- Pop-up Modal for Risk Management -->
+<div id="riskManagementModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Risk Management Alert</h2>
+        <p>Remember to consider the risks involved in trading. Diversify your investments and avoid putting all your capital in one transaction.</p>
+        <!-- Yes button for confirmation -->
+        <button id="confirmTrade" class="confirm-button">Yes, proceed with trade</button>
+    </div>
+</div>
+
+<!-- Pop-up Modal for Trade Confirmation -->
+<div id="tradeConfirmationModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Trade Confirmation</h2>
+        <p>Your trade has been successfully executed.</p>
+    </div>
+</div>
+
+    </main>
+
+    
+
+    <footer>
+   <p>© 2023 Advanced Trading Simulator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
